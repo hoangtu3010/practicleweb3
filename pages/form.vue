@@ -65,6 +65,7 @@ export default {
           .dispatch("practice/sCreateCandidate", this.formData)
           .then((res) => {
             this.$toast.success("Send successfully!");
+            this.$router.push('/')
           });
       }
       else{
